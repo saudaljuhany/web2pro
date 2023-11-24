@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coffee Website</title>
+  <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body>
+  <header>
+    <h1 class="name1">Grind Grove</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/user">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Grind Grove</h1>
+      </div>
+    </section>
+
+    <div class="about-us-content">
+      <img src="/images/coffee-bg.png" alt="About us">
+      <div>
+          <h2>About Us</h2>
+      <p>We are a team of coffee enthusiasts who believe in the power of a great cup of coffee.
+       Our mission is to bring you the best coffee from around the world, right to your doorstep.</p>
+      </div>
+  </div>
+  
+
+  <section id="menu" class="menu">
+    <h2>MENU</h2>
+    <main>
+      <div class="coffee-container">
+        <% coffees.forEach(coffee => { %>
+          <div class="coffee-item">
+            <div class="coffee-image-container">
+              <img src="<%= coffee.image %>" alt="Coffee" class="coffee-image" >
+            </div>
+            <h3><%= coffee.name %></h3>
+            <p><%= coffee.description %></p>
+            <p class="money">price: <%= coffee.price %></p>
+          </div>
+        <% }); %>
+      </div>
+    </main>
+</section>
+
+  </main>
+  <section id="contact">
+    <h2 class="con">Contact Us</h2>
+    <form class="coffee-contact-form" action="/contact" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    
+      <input type="submit" value="Submit">
+    </form>
+    <img class="footer" src="/images/footer-bg.jpg" alt="" >
+  </section>
+  
+</body>
+</html>

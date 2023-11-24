@@ -1,0 +1,314 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+  
+  header {
+    background-color: #ffffff;
+    color: #554040;
+    padding: 10px;
+  }
+  .name1{
+font-family: Georgia, 'Times New Roman', Times, serif;  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd9d9;
+    color: #fff;
+  }
+  
+  .hero {
+    background: url(images/header-bg.jpg);
+    background-size: cover;
+    color: #696363;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 299px 0;
+    border-radius: 10px;
+  }
+  
+  .hero-content {
+    max-width: 150px;
+    margin: 35px auto;
+   
+  }
+  .hero-content h1 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+  
+  .hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+
+.about-us {
+  padding: 20px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+.about-us-content {
+  display: flex; 
+  max-width: 900px;
+  margin: 30px auto ;
+  padding-top: 90px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+font-size: 24px;
+}
+.about-us-content img {
+  width: 400px;
+  height: 230px;
+  margin-right: 110px; 
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.about-us h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.menu {
+  background-image: url('/images/menu-bg.jpg');
+  background-size: cover; 
+}
+
+
+  .menu h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    align-items: center;
+    margin: 5px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #474040;
+  }
+
+
+  .coffee-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+  }
+  
+  
+  .coffee-image-container {
+    width: 160px;
+    height: auto;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .coffee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -15px;
+    
+  }
+  
+  .coffee-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .coffee-item {
+    width: calc(25% - 30px);
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coffee-item h2,
+  .coffee-item p {
+    margin: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .coffee-item {
+      width: calc(50% - 30px);
+      margin: 15px 15px 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coffee-item {
+      width: 100%;
+      margin: 15px 0 30px;
+    }
+  }
+.coffee-item:hover {
+  transform: scale(0.8);
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #fff; 
+  border-radius: 8px;
+  background-color: #000000; 
+  border: 2px solid #83857d; 
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.buttons a:hover {
+  color: #007BFF; 
+  background-color: #fff; 
+  border: 2px solid #007BFF; 
+}
+.con{
+text-align: center;
+padding-top: 20px;
+}
+.coffee-contact-form {
+  background-color: rgba(111, 78, 55, 0.8); 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.coffee-contact-form input,
+.coffee-contact-form textarea {
+  width: 100%;
+}
+.coffee-contact-form input[type="submit"]:hover {
+  background-color: #5d4848;
+  color: #ffffff;
+}
+
+@media (min-width: 769px) {
+  .coffee-contact-form {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .coffee-contact-form {
+    width: 50%;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+  /*   add-coffe css*/
+  
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #8e8282;
+  border: 1px solid #999292;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #c9c9c9;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #585858;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #485d44;
+}
+.money {
+  font-size: 20px;
+  color: #333;
+  background-color: #aea6a6;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+

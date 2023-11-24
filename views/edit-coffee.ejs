@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <title>Add Coffee</title>
+</head>
+<body>
+  <header>
+    
+    <h1>edit Coffee</h1>
+  </header>
+  
+  <main>
+    <form action="/edit-coffee/<%= coffee.id %>" method="POST">
+      <div>
+        <label for="name">Coffee Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" required>
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" min="0" value="<%= coffee.price %>" required>
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+      </div>
+      <button type="submit">edit Coffee</button>
+    </form>
+  </main>
+
+</body>
+</html>

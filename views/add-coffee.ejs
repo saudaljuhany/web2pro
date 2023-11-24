@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <title>Add Coffee</title>
+</head>
+<body>
+  <header>
+    <h1>Add Coffee</h1>
+  </header>
+  <main>
+    <form action="/add-coffee" method="POST">
+      <div>
+        <label for="name">Coffee Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" required>
+      </div>
+        <div>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price"  required>
+        </div>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <button type="submit">Add Coffee</button>
+    </form>
+  </main>
+  
+  </body>
+  </html>
+  
